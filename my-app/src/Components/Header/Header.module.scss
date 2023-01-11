@@ -1,3 +1,15 @@
-header {
-    color: brown;
+.HeorContainer  {
+    position: relative;
+    img {
+        width: 100%;
+    }
+}
+
+.LogoContainer {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+     img {
+        width: 60%;
+    }
 }
