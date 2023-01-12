@@ -1,5 +1,4 @@
 import style from "./Header.module.scss";
-
 import Logo from "../../../Assets/Images/KT-Logo.png";
 import HeroBg from "../../../Assets/Images/Bg-Hero-Blue.png";
 

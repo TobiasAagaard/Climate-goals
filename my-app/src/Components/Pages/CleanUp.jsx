@@ -1,4 +1,4 @@
-const MitCo2 = () => {
+const CleanUp = () => {
   return (
     <>
       <h1>fasknfjas</h1>
@@ -9,4 +9,4 @@ const MitCo2 = () => {
   );
 };
 
-export { MitCo2 };
+export { CleanUp };

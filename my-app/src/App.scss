@@ -8,4 +8,11 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 1366px){
+  body {
+    margin: 1rem;
+  }
 }
