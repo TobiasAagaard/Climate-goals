@@ -1,0 +1,27 @@
+@import "../../../Assets/Partials/Colors.scss";
+
+.HeorContainer {
+  position: relative;
+  img {
+    width: 100%;
+  }
+}
+
+.LogoContainer {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  img {
+    width: 60%;
+  }
+  article {
+    position: absolute;
+    top: 5.5rem;
+    p {
+      font-size: 0.7rem;
+      color: $lightBlue;
+      margin-top: 0.5%;
+      margin-right: 22%;
+    }
+  }
+}
