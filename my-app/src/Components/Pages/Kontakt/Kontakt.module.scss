@@ -1,0 +1,89 @@
+@import "../../../Assets/Partials/Colors.scss";
+.contact {
+  .formGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0.5rem;
+    img {
+      width: 100%;
+    }
+  }
+  fieldset {
+    border: none;
+  }
+
+  textarea,
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    border: solid 3px $grey;
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 0.4em 0;
+    width: 100%;
+    resize: none;
+  }
+
+  form ::placeholder {
+    color: #bbb;
+  }
+  button {
+    background-color: $darkblue;
+    color: #eee;
+    text-transform: uppercase;
+    border-radius: 2px;
+    border: solid 1px #ccc;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    padding: 1em;
+    cursor: pointer;
+  }
+  #btn-light {
+    background-color: $lightblue;
+  }
+  input[type="text"].field-error,
+  input[type="email"].field-error,
+  input[type="tel"].field-error,
+  textarea.field-error {
+    border-color: #f0005e;
+  }
+  .text-error {
+    font-size: 1em;
+    color: #f0005e;
+  }
+}
+// tablet
+@media screen and (min-width: 768px) {
+  .contact {
+    .formGrid {
+      grid-template-columns: auto auto;
+      gap: 1rem;
+    }
+    textarea {
+      padding-bottom: 4rem;
+    }
+  }
+}
+
+//DESKTOP VERSION
+@media screen and (min-width: 1200px) {
+  .contact {
+    .formGrid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin: 0;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      margin-bottom: 1rem;
+    }
+    textarea {
+      padding-bottom: 10rem;
+    }
+    button {
+      width: 49.692%;
+    }
+  }
+}

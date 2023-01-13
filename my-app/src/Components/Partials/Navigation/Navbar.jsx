@@ -3,9 +3,9 @@ import styles from "./Navbar.module.scss";
 
 const NavArr = [
   { title: "verdensmålene", path: "/" },
-  { title: "delmålene", path: "/delmaalene" },
-  { title: "udfordringer", path: "/udfordringer" },
-  { title: "kontakt", path: "/kontakt" },
+  { title: "delmålene", path: "/Delmaalene" },
+  { title: "udfordringer", path: "/Udfordringer" },
+  { title: "kontakt", path: "/Kontakt" },
 ];
 
 const Navbar = (props) => {

@@ -1,0 +1,38 @@
+@import "../../../Assets//Partials/Colors.scss";
+.galleryGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  img {
+    width: 100%;
+  }
+}
+.highlight {
+  font-weight: 600;
+}
+
+.sectionHeader {
+  margin: 1rem 0.5rem;
+  h3 {
+    color: $lightblue;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  p {
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+  }
+}
+
+// TABLET VERSION
+@media screen and (min-width: 768px) {
+  .galleryGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+//DESKTOP VERSION
+@media screen and (min-width: 1200px) {
+  .galleryGrid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

@@ -1,0 +1,48 @@
+@import "../../../Assets/Partials/Colors.scss";
+
+.sectionHeader {
+  margin: 1rem 0.5rem;
+  h3 {
+    color: $lightblue;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  p {
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.cardFigure {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+  img {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  h4 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 1rem 0.3rem;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  p {
+    margin: 0.3rem 0.3rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cardFigure {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
