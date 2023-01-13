@@ -1,32 +1,27 @@
-import style from './Navbar.module.scss'
+import { NavLink } from "react-router-dom";
+import styles from "./Navbar.module.scss";
 
-import { NavLink } from "react-router-dom"
 const NavArr = [
-    {title: 'START', path: "/"},
-    {title: 'DIT CO2', path: "/Co2"},
-    {title: 'CLEAN UP', path: "/CleanUp"},
-    {title: 'TILMELD DIG', path: "/Tilmeld"}
-]
+  { title: "verdensmålene", path: "/" },
+  { title: "delmålene", path: "/delmaalene" },
+  { title: "udfordringer", path: "/udfordringer" },
+  { title: "kontakt", path: "/kontakt" },
+];
 
-const Nav = (props) => {
-    return (
-        <nav className={style.navMain}>
-            <ul>
-                {props.data.map((NavArr, key) => {
-                    return(
-                        <li key={key}><NavLink to={NavArr.path}>{NavArr.title}</NavLink></li>
-                    )
-                })}
-            </ul>
-            <div className={style.burger} onClick={() => {
-                
-            }}>
-                <div className={style.line1}></div>
-                <div className={style.line2}></div>
-                <div className={style.line3}></div>
-            </div>
-        </nav>
-    )
-}
+const Navbar = (props) => {
+  return (
+    <nav className={styles.navMain}>
+      <ul>
+        {props.data.map((NavArr, key) => {
+          return (
+            <li key={key}>
+              <NavLink to={NavArr.path}>{NavArr.title}</NavLink>
+            </li>
+          );
+        })}
+      </ul>
+    </nav>
+  );
+};
 
-export {Nav, NavArr}
+export { Navbar, NavArr };

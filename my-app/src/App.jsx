@@ -1,10 +1,11 @@
 import "./App.scss";
 
 import { Header } from "./Components/Partials/Header/Header";
-import {Nav, NavArr} from "./Components/Partials/Navigation/Navbar"
+import { Navbar, NavArr } from "./Components/Partials/Navigation/Navbar";
 import { Main } from "./Components/Partials/Main/Main";
+import { Footer } from "./Components/Partials/Footer/Footer";
 
-import { BrowserRouter, Form } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import AppRouter from "./Components/App/AppRouter/AppRouter";
 
 function App() {
@@ -12,10 +13,11 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Header />
-        <Nav data={NavArr} />
+        <Navbar data={NavArr} />
         <Main>
           <AppRouter />
         </Main>
+        <Footer />
       </div>
     </BrowserRouter>
   );

@@ -1,51 +1,65 @@
 @import "../../../Assets/Partials/Colors.scss";
 .headerMain {
-.HeorContainer {
   position: relative;
-  margin-bottom: -1rem;
+  background-color: $black;
+  padding: 4vh;
+  font-family: "Oswald", sans-serif;
   img {
-    width: 100%;
-  }
-}
-
-.LogoContainer {
-  position: absolute;
-  top: 2%;
-  left: 2%;
-  img {
-    width: 60%;
-  }
-  article {
     position: absolute;
-    top: 5.5rem;
-    margin: 0;
-    p {
-      font-size: 0.7rem;
-      color: $lightBlue;
-      margin-top: 0.5%;
-      margin-right: 22%;
+    top: 1.5rem;
+    left: 2.5rem;
+    width: 20%;
+  }
+  hgroup {
+    margin-left: 8rem;
+    h1 {
+      color: #fff;
+      margin-bottom: 0;
+      font-size: 100%;
+      font-weight: 500;
+    }
+    h2 {
+      color: $lightblue;
+      font-size: 1.4rem;
     }
   }
 }
+
+// DESKTOP VERSION
+@media screen and (min-width: 1200px) {
+  .headerMain {
+    img {
+      width: 20%;
+      top: 1rem;
+      left: 10rem;
+    }
+    hgroup {
+      margin-left: 25rem;
+      h1 {
+        font-size: 5rem;
+      }
+      h2 {
+        font-size: 3.7rem;
+      }
+    }
+  }
 }
 
-@media screen and (min-width: 1366px) {
+// My desktop
+@media screen and (min-width: 1600px) {
   .headerMain {
-    .LogoContainer {
-      top: 3%;
-      left: 3%;
-      img {
-        width: 100%;
-        
+    img {
+      width: 17%;
+      top: 4rem;
+      left: 17rem;
+    }
+    hgroup {
+      margin-left: 35rem;
+      h1 {
+        font-size: 8rem;
       }
-      article {
-        top: 250%;
-        left: 200%;
-        marg
-        p {
-          font-size: 2rem;
-          margin: 0;
-        }
+      h2 {
+        font-size: 5.5rem;
       }
     }
   }

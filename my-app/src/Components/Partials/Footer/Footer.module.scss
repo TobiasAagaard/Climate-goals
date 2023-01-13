@@ -1,0 +1,56 @@
+@import "../../../Assets//Partials//Colors.scss";
+.footerMain {
+  background-color: $black;
+  .footerSection {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    article {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem 0;
+      h2 {
+        color: $darkblue;
+      }
+      a {
+        color: $grey;
+        margin: 0.5rem 0;
+        text-decoration: none;
+      }
+      p {
+        color: $grey;
+        margin-bottom: 0.2rem;
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// DESKTOP VERSION
+@media screen and (min-width: 1200px) {
+  .footerMain {
+    margin-top: 1rem;
+    .footerSection {
+      flex-direction: row;
+      justify-content: space-evenly;
+      article {
+        display: flex;
+        flex-direction: column;
+        h2 {
+          font-size: 3rem;
+        }
+        a {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+      }
+      img {
+        width: 15%;
+      }
+    }
+  }
+}
